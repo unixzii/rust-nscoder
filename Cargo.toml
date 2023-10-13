@@ -1,0 +1,19 @@
+[package]
+name = "nscoder"
+version = "0.0.1"
+authors = ["Cyandev <unixzii@gmail.com>"]
+description = "A Rust implementation of Cocoa archiving capability."
+license = "MIT"
+repository = "https://github.com/unixzii/rust-nscoder"
+keywords = ["parser", "serialization", "binary"]
+edition = "2021"
+
+[features]
+default = []
+all = ["export_plist"]
+export_plist = []
+
+[dependencies]
+plist = "1.5.0"
+serde = { version = "1", features = ["derive"] }
+thiserror = "1"
